@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Tags Tutorial - Learn the different parts and uses of HTML tags">
+    <title>HTML Tags Tutorial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+            background-image:url("e.jpeg");
+        }
+
+        /* Home Page Styles */
+        .home-page {
+            height: 100vh;
+            background-image:url('e.jpeg') ;            
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home-page h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .home-page p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }    
+
+        .home-page button {
+            background-color: #1c6ab0;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .home-page button:hover {
+            background-color: #3c8dbc;
+        }
+
+        /* Tutorial Page Styles */
+        .tutorial-page {
+            background-color: #f0f4f8;
+            padding: 40px 0;
+        }
+
+        header {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #3c8dbc;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #1c6ab0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            color: #3c8dbc;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #3c8dbc;
+            padding-bottom: 10px;
+            background-image:url("t.jpeg");
+        }
+
+        .section-content {
+            line-height: 1.6;
+            font-size: 1.1em;
+            
+        }
+
+        .tags-list {
+            list-style-type: none;
+            padding-left: 0;
+            
+        }
+
+        .tags-list li {
+            padding: 10px;
+            background-color: #e9f3fb;
+            margin: 8px 0;
+            border-left: 5px solid #3c8dbc;
+            
+        }
+
+        footer {
+            background-color: #5D9CEC;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-size: 1em;
+            
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .home-page h1 {
+                font-size: 2.5em;
+            }
+
+            .home-page p {
+                font-size: 1em;
+                margin-bottom: 20px;
+            }
+
+            .home-page button {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+                padding: 10px 20px;
+            }
+
+            .container {
+                padding: 15px;
+               
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .section-content {
+                font-size: 1em;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .home-page h1 {
+                font-size: 2em;
+            }
+
+            .home-page p {
+                font-size: 0.9em;
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            .home-page button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+
+            .section-title {
+                font-size: 1.4em;
+            }
+
+            .tags-list li {
+                font-size: 0.9em;
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Home Page Section -->
+    <div class="home-page">
+        <h1>Welcome to HTML Tags Tutorial!</h1>
+        <p>Learn all the essential HTML tags that are used to structure and style webpages. This tutorial will walk you through everything you need to get started with HTML.</p>
+        <button onclick="window.location.href='#tutorial'">Start the Tutorial</button>
+    </div>
+
+    <!-- Tutorial Page Content -->
+    <div class="tutorial-page" id="tutorial">
+        <header>
+            <h1>HTML Tags Tutorial</h1>
+            <p>Learn the essential parts and usage of HTML tags</p>
+        </header>
+
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#tag-structure">Tag Structure</a>
+            <a href="#common-tags">Common HTML Tags</a>
+        </nav>
+
+        <div class="container">
+            <!-- Introduction Section -->
+            <section id="intro">
+                <h2 class="section-title">Introduction to HTML Tags</h2>
+                <div class="section-content">
+                    <p>HTML (HyperText Markup Language) is the standard language for creating web pages. Tags in HTML are used to define the structure and content of a webpage. Tags are the building blocks of HTML and are enclosed in angle brackets like <code>&lt;tag&gt;</code>.</p>
+                </div>
+            </section>
+
+            <!-- Tag Structure Section -->
+            <section id="tag-structure">
+                <h2 class="section-title">Structure of an HTML Tag</h2>
+                <div class="section-content">
+                    <p>Each HTML tag has two parts:</p>
+                    <ul class="tags-list">
+                        <li><strong>Opening Tag:</strong> Marks the beginning of the element (e.g., <code>&lt;h1&gt;</code>).</li>
+                        <li><strong>Closing Tag:</strong> Marks the end of the element (e.g., <code>&lt;/h1&gt;</code>).</li>
+                        <li><strong>Content:</strong> The information enclosed within the tags (e.g., the text or image that is displayed on the webpage).</li>
+                    </ul>
+                    
+                </div>
+            </section>
+
+            <!-- Common HTML Tags Section -->
+            <section id="common-tags">
+                <h2 class="section-title">Common HTML Tags</h2>
+                <div class="section-content">
+                    <p>HTML tags are used to structure and format content on a webpage. Here are some of the most common HTML tags and their uses:</p>
+
+                    <h3>1. Structural Tags</h3>
+                    <ul class="tags-list">
+                        <li><strong>&lt;html&gt;</strong> - The root element of an HTML document.</li>
+                        <li><strong>&lt;head&gt;</strong> - Contains metadata about the HTML document, like the title and character encoding.</li>
+                        <li><strong>&lt;body&gt;</strong> - Contains the main content of the document, which is visible on the page.</li>
+                    </ul>
+
+                    <h3>2. Text Formatting Tags</h3>
+                    <ul class="tags-list">
+                        <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Header tags used to define headings, with <code>&lt;h1&gt;</code> being the largest and <code>&lt;h6&gt;</code> the smallest.</li>
+                        <li><strong>&lt;p&gt;</strong> - Paragraph tag used to define blocks of text.</li>
+                        <li><strong>&lt;b&gt;</strong> - Bold tag used to make text bold.</li>
+                        <li><strong>&lt;i&gt;</strong> - Italic tag used to</li>
+                    <h3>3.Html List Tags</h3>
+                    <ul class="tags-list"></ul>
+                    <li><strong>&lt;ul&gt;</strong>-Defines an unordered list. The items in the list are marked with bullets (default).</li>
+                                        <li><strong>&lt;ol&gt;</strong>-Defines an ordered list where the items are numbered (or alphabetically ordered, depending on the type attribute).</li>
+                                       <li><strong>&lt;li&gt;</strong>-Defines a item in either an unordered list (ul) or ordered list (ol).</li>
+<li><strong>&lt;dl&gt;</strong>-Defines a description list. It's used to display pairs of terms and their descriptions.</li> 
+<li><strong>&lt;dt&gt;</strong>-Defines a term in a description list</li> 
+<li><strong>&lt;dd&gt;</strong>-Defines the description or definition for a term (dt) in a description list.</li>   
+<li><strong>&lt;div&gt;</strong>-is a block-level element used as a container to group content together for styling or layout purposes. It doesn't have any semantic meaning by itself, but it is commonly used in conjunction with CSS and JavaScript to organize and manipulate sections of a webpage.</li>   
+                                    
+                    
+<br>
+<br>
+<br>
+<br>     
+<h1>Try It Yourself on another website like w3school to test your skills and learnings</h1>
+<br>
+<br>
+<br>
+<h1>Reflection</h1>
+<p><i>Building a website that teaches users how to create their own HTML pages was an enjoyable experience. The site provides an easy-to-follow guide for beginners, covering essential HTML elements like headings, paragraphs, and links. I focused on clarity and simplicity, ensuring that users could learn effectively by practicing as they went through each step.
+
+Looking back, I’ve realized how important it is to strike a balance between simplicity and depth. While I wanted to keep the tutorial accessible, I also aimed to give enough information for users to build a solid understanding.  </i></p>                  
+                        
